@@ -1,3 +1,4 @@
+
 CREATE DATABASE Hotel;
 
 USE Hotel;
@@ -24,32 +25,38 @@ CREATE TABLE Habitaciones (
 -- Tabla de reservas
 CREATE TABLE Reservas (
     id_reserva INT AUTO_INCREMENT PRIMARY KEY,
-    id_cliente INT,
     id_habitacion INT,
     fecha_entrada DATE,
     fecha_salida DATE,
     precio_total DECIMAL(8,2),
     estado VARCHAR(20),
 
-    FOREIGN KEY (id_cliente)
-        REFERENCES Clientes(id_cliente),
-
     FOREIGN KEY (id_habitacion)
         REFERENCES Habitaciones(id_habitacion)
+        ON UPDATE CASCADE
+        ON DELETE RESTRICT
 );
 
--- Tabla de huespedes de cada reserva
-CREATE TABLE Huespedes (
-    id_huesped INT AUTO_INCREMENT PRIMARY KEY,
-    id_reserva INT,
+-- Tabla intermedia clientes y reservas
+CREATE TABLE Clientes_Reservas (
     id_cliente INT,
+    id_reserva INT,
+    es_titular BOOLEAN DEFAULT FALSE,
 
-    FOREIGN KEY (id_reserva) REFERENCES Reservas(id_reserva),
+    PRIMARY KEY (id_cliente, id_reserva),
 
-    FOREIGN KEY (id_cliente) REFERENCES Clientes(id_cliente)
+    FOREIGN KEY (id_cliente)
+        REFERENCES Clientes(id_cliente)
+        ON UPDATE CASCADE
+        ON DELETE RESTRICT,
+
+    FOREIGN KEY (id_reserva)
+        REFERENCES Reservas(id_reserva)
+        ON UPDATE CASCADE
+        ON DELETE CASCADE
 );
 
--- Tabla de historial de estancias
+-- Tabla del historial 
 CREATE TABLE Historial (
     id_historial INT AUTO_INCREMENT PRIMARY KEY,
     id_reserva INT,
@@ -57,5 +64,8 @@ CREATE TABLE Historial (
     fecha_salida DATE,
     importe DECIMAL(8,2),
 
-    FOREIGN KEY (id_reserva) REFERENCES Reservas(id_reserva)
+    FOREIGN KEY (id_reserva)
+        REFERENCES Reservas(id_reserva)
+        ON UPDATE CASCADE
+        ON DELETE RESTRICT
 );
