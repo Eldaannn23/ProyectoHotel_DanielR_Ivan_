@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\losve\\OneDrive\\Escritorio\\2do DAM\\Desarrollo de Interfaces\\Hotel_GestionHabitaciones\\Hotel_GestionHabitaciones\\Hotel_GestionHabitaciones.csproj": {}
+    "C:\\Users\\danir\\OneDrive\\Desktop\\ProyectoHotel_DanielR_Ivan\\ProyectoHotel_DanielR_Ivan_\\Hotel_GestionHabitaciones\\Hotel_GestionHabitaciones\\Hotel_GestionHabitaciones.csproj": {}
   },
   "projects": {
-    "C:\\Users\\losve\\OneDrive\\Escritorio\\2do DAM\\Desarrollo de Interfaces\\Hotel_GestionHabitaciones\\Hotel_GestionHabitaciones\\Hotel_GestionHabitaciones.csproj": {
+    "C:\\Users\\danir\\OneDrive\\Desktop\\ProyectoHotel_DanielR_Ivan\\ProyectoHotel_DanielR_Ivan_\\Hotel_GestionHabitaciones\\Hotel_GestionHabitaciones\\Hotel_GestionHabitaciones.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\losve\\OneDrive\\Escritorio\\2do DAM\\Desarrollo de Interfaces\\Hotel_GestionHabitaciones\\Hotel_GestionHabitaciones\\Hotel_GestionHabitaciones.csproj",
+        "projectUniqueName": "C:\\Users\\danir\\OneDrive\\Desktop\\ProyectoHotel_DanielR_Ivan\\ProyectoHotel_DanielR_Ivan_\\Hotel_GestionHabitaciones\\Hotel_GestionHabitaciones\\Hotel_GestionHabitaciones.csproj",
         "projectName": "Hotel_GestionHabitaciones",
-        "projectPath": "C:\\Users\\losve\\OneDrive\\Escritorio\\2do DAM\\Desarrollo de Interfaces\\Hotel_GestionHabitaciones\\Hotel_GestionHabitaciones\\Hotel_GestionHabitaciones.csproj",
-        "packagesPath": "C:\\Users\\losve\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\losve\\OneDrive\\Escritorio\\2do DAM\\Desarrollo de Interfaces\\Hotel_GestionHabitaciones\\Hotel_GestionHabitaciones\\obj\\",
+        "projectPath": "C:\\Users\\danir\\OneDrive\\Desktop\\ProyectoHotel_DanielR_Ivan\\ProyectoHotel_DanielR_Ivan_\\Hotel_GestionHabitaciones\\Hotel_GestionHabitaciones\\Hotel_GestionHabitaciones.csproj",
+        "packagesPath": "C:\\Users\\danir\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\danir\\OneDrive\\Desktop\\ProyectoHotel_DanielR_Ivan\\ProyectoHotel_DanielR_Ivan_\\Hotel_GestionHabitaciones\\Hotel_GestionHabitaciones\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\losve\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\danir\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -48,6 +52,12 @@
         "net9.0-windows": {
           "framework": "net9.0-windows7.0",
           "targetAlias": "net9.0-windows",
+          "dependencies": {
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[9.1.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -67,7 +77,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.403/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.401/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
