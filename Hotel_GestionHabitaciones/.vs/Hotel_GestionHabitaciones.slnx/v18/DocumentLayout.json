@@ -1,0 +1,57 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\losve\\OneDrive\\Escritorio\\2do DAM\\Desarrollo de Interfaces\\Hotel_GestionHabitaciones\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{042D1727-D60E-3D04-061D-B464ECA63CFC}|Hotel_GestionHabitaciones\\Hotel_GestionHabitaciones.csproj|c:\\users\\losve\\onedrive\\escritorio\\2do dam\\desarrollo de interfaces\\hotel_gestionhabitaciones\\hotel_gestionhabitaciones\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{042D1727-D60E-3D04-061D-B464ECA63CFC}|Hotel_GestionHabitaciones\\Hotel_GestionHabitaciones.csproj|solutionrelative:hotel_gestionhabitaciones\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{042D1727-D60E-3D04-061D-B464ECA63CFC}|Hotel_GestionHabitaciones\\Hotel_GestionHabitaciones.csproj|c:\\users\\losve\\onedrive\\escritorio\\2do dam\\desarrollo de interfaces\\hotel_gestionhabitaciones\\hotel_gestionhabitaciones\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{042D1727-D60E-3D04-061D-B464ECA63CFC}|Hotel_GestionHabitaciones\\Hotel_GestionHabitaciones.csproj|solutionrelative:hotel_gestionhabitaciones\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\losve\\OneDrive\\Escritorio\\2do DAM\\Desarrollo de Interfaces\\Hotel_GestionHabitaciones\\Hotel_GestionHabitaciones\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "Hotel_GestionHabitaciones\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\losve\\OneDrive\\Escritorio\\2do DAM\\Desarrollo de Interfaces\\Hotel_GestionHabitaciones\\Hotel_GestionHabitaciones\\MainWindow.xaml",
+              "RelativeToolTip": "Hotel_GestionHabitaciones\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-11-10T07:27:58.287Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\losve\\OneDrive\\Escritorio\\2do DAM\\Desarrollo de Interfaces\\Hotel_GestionHabitaciones\\Hotel_GestionHabitaciones\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Hotel_GestionHabitaciones\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\losve\\OneDrive\\Escritorio\\2do DAM\\Desarrollo de Interfaces\\Hotel_GestionHabitaciones\\Hotel_GestionHabitaciones\\MainWindow.xaml.cs",
+              "RelativeToolTip": "Hotel_GestionHabitaciones\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAHkAAAAAAAAAAAAkwIQAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-10T07:27:54.198Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

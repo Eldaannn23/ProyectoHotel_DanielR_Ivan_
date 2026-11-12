@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "Hotel_GestionHabitaciones/1.0.0": {
+        "runtime": {
+          "Hotel_GestionHabitaciones.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Hotel_GestionHabitaciones/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
