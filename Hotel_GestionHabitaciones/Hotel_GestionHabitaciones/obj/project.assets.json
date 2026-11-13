@@ -1238,24 +1238,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\danir\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\losve\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\danir\\OneDrive\\Desktop\\ProyectoHotel_DanielR_Ivan\\ProyectoHotel_DanielR_Ivan_\\Hotel_GestionHabitaciones\\Hotel_GestionHabitaciones\\Hotel_GestionHabitaciones.csproj",
+      "projectUniqueName": "C:\\Users\\losve\\OneDrive\\Escritorio\\ProyectoHotel_DanielR_Ivan_\\Hotel_GestionHabitaciones\\Hotel_GestionHabitaciones\\Hotel_GestionHabitaciones.csproj",
       "projectName": "Hotel_GestionHabitaciones",
-      "projectPath": "C:\\Users\\danir\\OneDrive\\Desktop\\ProyectoHotel_DanielR_Ivan\\ProyectoHotel_DanielR_Ivan_\\Hotel_GestionHabitaciones\\Hotel_GestionHabitaciones\\Hotel_GestionHabitaciones.csproj",
-      "packagesPath": "C:\\Users\\danir\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\danir\\OneDrive\\Desktop\\ProyectoHotel_DanielR_Ivan\\ProyectoHotel_DanielR_Ivan_\\Hotel_GestionHabitaciones\\Hotel_GestionHabitaciones\\obj\\",
+      "projectPath": "C:\\Users\\losve\\OneDrive\\Escritorio\\ProyectoHotel_DanielR_Ivan_\\Hotel_GestionHabitaciones\\Hotel_GestionHabitaciones\\Hotel_GestionHabitaciones.csproj",
+      "packagesPath": "C:\\Users\\losve\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\losve\\OneDrive\\Escritorio\\ProyectoHotel_DanielR_Ivan_\\Hotel_GestionHabitaciones\\Hotel_GestionHabitaciones\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\danir\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\losve\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1314,7 +1309,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.401/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.403/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
