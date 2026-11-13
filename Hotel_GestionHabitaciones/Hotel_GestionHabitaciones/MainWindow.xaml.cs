@@ -1,132 +1,31 @@
-﻿
-using System;
-using System.Collections.Generic;
-using System.Windows;
-using System.Windows.Controls;
+﻿using System.Windows;
 
-namespace Hotel
+namespace Hotel_GestionHabitaciones
 {
     public partial class MainWindow : Window
     {
-        List<Habitacion> habitaciones = new List<Habitacion>();
-
         public MainWindow()
         {
             InitializeComponent();
-
-            // Creamos las habitaciones
-            // PISO 1
-            habitaciones.Add(new Habitacion(101, "Individual", 45, "Disponible"));
-            habitaciones.Add(new Habitacion(102, "Doble", 65, "Disponible"));
-            habitaciones.Add(new Habitacion(103, "Doble", 70, "Ocupada"));
-            habitaciones.Add(new Habitacion(104, "Suite", 120, "Disponible"));
-
-            // PISO 2
-            habitaciones.Add(new Habitacion(201, "Individual", 40, "Disponible"));
-            habitaciones.Add(new Habitacion(202, "Familiar", 95, "Ocupada"));
-            habitaciones.Add(new Habitacion(203, "Suite", 150, "Mantenimiento"));
-            habitaciones.Add(new Habitacion(204, "Doble", 60, "Disponible"));
-
-            // PISO 3
-            habitaciones.Add(new Habitacion(301, "Individual", 45, "Disponible"));
-            habitaciones.Add(new Habitacion(302, "Doble", 65, "Disponible"));
-            habitaciones.Add(new Habitacion(303, "Familiar", 95, "Disponible"));
-            habitaciones.Add(new Habitacion(304, "Suite", 120, "Disponible"));
-
-            // PISO 4
-            habitaciones.Add(new Habitacion(401, "Individual", 40, "Disponible"));
-            habitaciones.Add(new Habitacion(402, "Doble", 70, "Ocupada"));
-            habitaciones.Add(new Habitacion(403, "Familiar", 95, "Disponible"));
-            habitaciones.Add(new Habitacion(404, "Suite", 150, "Disponible"));
-
-            // PISO 5
-            habitaciones.Add(new Habitacion(501, "Individual", 45, "Disponible"));
-            habitaciones.Add(new Habitacion(502, "Doble", 60, "Disponible"));
-            habitaciones.Add(new Habitacion(503, "Familiar", 95, "Ocupada"));
-            habitaciones.Add(new Habitacion(504, "Suite", 120, "Disponible"));
-
-            // PISO 6
-            habitaciones.Add(new Habitacion(601, "Individual", 40, "Disponible"));
-            habitaciones.Add(new Habitacion(602, "Doble", 65, "Disponible"));
-            habitaciones.Add(new Habitacion(603, "Familiar", 95, "Disponible"));
-            habitaciones.Add(new Habitacion(604, "Suite", 150, "Disponible"));
-
-            // PISO 7
-            habitaciones.Add(new Habitacion(701, "Individual", 45, "Disponible"));
-            habitaciones.Add(new Habitacion(702, "Doble", 70, "Disponible"));
-            habitaciones.Add(new Habitacion(703, "Familiar", 95, "Disponible"));
-            habitaciones.Add(new Habitacion(704, "Suite", 120, "Mantenimiento"));
-
-            // PISO 8
-            habitaciones.Add(new Habitacion(801, "Individual", 40, "Disponible"));
-            habitaciones.Add(new Habitacion(802, "Doble", 60, "Ocupada"));
-            habitaciones.Add(new Habitacion(803, "Familiar", 95, "Disponible"));
-            habitaciones.Add(new Habitacion(804, "Suite", 150, "Disponible"));
-
-            // PISO 9
-            habitaciones.Add(new Habitacion(901, "Individual", 45, "Disponible"));
-            habitaciones.Add(new Habitacion(902, "Doble", 65, "Disponible"));
-            habitaciones.Add(new Habitacion(903, "Familiar", 95, "Disponible"));
-            habitaciones.Add(new Habitacion(904, "Suite", 120, "Disponible"));
-
-            // PISO 10
-            habitaciones.Add(new Habitacion(1001, "Individual", 40, "Disponible"));
-            habitaciones.Add(new Habitacion(1002, "Doble", 70, "Disponible"));
-            habitaciones.Add(new Habitacion(1003, "Familiar", 95, "Ocupada"));
-            habitaciones.Add(new Habitacion(1004, "Suite", 150, "Disponible"));
-
-
-
-
-            // Mostramos las habitaciones
-
-            tablaHabitaciones.ItemsSource = habitaciones;
+            DataContext = new MainViewModel();   // de aqui salen los datos de los Binding
         }
 
-        private void Buscar_Click(object sender, RoutedEventArgs e)
+        // Login. Se hace aqui porque el PasswordBox no permite Binding (por seguridad).
+        private void Entrar_Click(object sender, RoutedEventArgs e)
         {
-            string tipo = ((ComboBoxItem)cmbTipo.SelectedItem).Content.ToString();
-
-            if (tipo == "Todas")
+            if (txtUsuario.Text == "admin" && txtPassword.Password == "1234")
             {
-                tablaHabitaciones.ItemsSource = habitaciones;
+                panelLogin.Visibility = Visibility.Collapsed;   // ocultamos el login
             }
             else
             {
-                List<Habitacion> resultado = new List<Habitacion>();
-
-                foreach (Habitacion h in habitaciones)
-                {
-                    if (h.Tipo == tipo)
-                    {
-                        resultado.Add(h);
-                    }
-                }
-
-                tablaHabitaciones.ItemsSource = resultado;
+                MessageBox.Show("Usuario o contraseña incorrectos");
             }
         }
 
-        private void Reservar_Click(object sender, RoutedEventArgs e)
+        private void Salir_Click(object sender, RoutedEventArgs e)
         {
-            Habitacion seleccionada = tablaHabitaciones.SelectedItem as Habitacion;
-
-            if (seleccionada == null)
-            {
-                MessageBox.Show("Selecciona una habitacion");
-            }
-            else if (seleccionada.Estado == "Reservada")
-            {
-                MessageBox.Show("Esta habitacion ya esta reservada");
-            }
-            else
-            {
-                seleccionada.Estado = "Reservada";
-
-                tablaHabitaciones.Items.Refresh();
-
-                MessageBox.Show("Habitacion reservada correctamente");
-            }
+            Close();
         }
     }
 }
