@@ -1,14 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\losve\\OneDrive\\Escritorio\\ProyectoHotel_DanielR_Ivan_\\Hotel_GestionHabitaciones\\",
+  "WorkspaceRootPath": "C:\\Users\\danir\\OneDrive\\Desktop\\ProyectoHotel_DanielR_Ivan\\ProyectoHotel_DanielR_Ivan_\\Hotel_GestionHabitaciones\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{042D1727-D60E-3D04-061D-B464ECA63CFC}|Hotel_GestionHabitaciones\\Hotel_GestionHabitaciones.csproj|c:\\users\\losve\\onedrive\\escritorio\\proyectohotel_danielr_ivan_\\hotel_gestionhabitaciones\\hotel_gestionhabitaciones\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{042D1727-D60E-3D04-061D-B464ECA63CFC}|Hotel_GestionHabitaciones\\Hotel_GestionHabitaciones.csproj|solutionrelative:hotel_gestionhabitaciones\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{042D1727-D60E-3D04-061D-B464ECA63CFC}|Hotel_GestionHabitaciones\\Hotel_GestionHabitaciones.csproj|c:\\users\\danir\\onedrive\\desktop\\proyectohotel_danielr_ivan\\proyectohotel_danielr_ivan_\\hotel_gestionhabitaciones\\hotel_gestionhabitaciones\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{042D1727-D60E-3D04-061D-B464ECA63CFC}|Hotel_GestionHabitaciones\\Hotel_GestionHabitaciones.csproj|solutionrelative:hotel_gestionhabitaciones\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{042D1727-D60E-3D04-061D-B464ECA63CFC}|Hotel_GestionHabitaciones\\Hotel_GestionHabitaciones.csproj|c:\\users\\losve\\onedrive\\escritorio\\proyectohotel_danielr_ivan_\\hotel_gestionhabitaciones\\hotel_gestionhabitaciones\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{042D1727-D60E-3D04-061D-B464ECA63CFC}|Hotel_GestionHabitaciones\\Hotel_GestionHabitaciones.csproj|solutionrelative:hotel_gestionhabitaciones\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{042D1727-D60E-3D04-061D-B464ECA63CFC}|Hotel_GestionHabitaciones\\Hotel_GestionHabitaciones.csproj|c:\\users\\danir\\onedrive\\desktop\\proyectohotel_danielr_ivan\\proyectohotel_danielr_ivan_\\hotel_gestionhabitaciones\\hotel_gestionhabitaciones\\basededatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{042D1727-D60E-3D04-061D-B464ECA63CFC}|Hotel_GestionHabitaciones\\Hotel_GestionHabitaciones.csproj|solutionrelative:hotel_gestionhabitaciones\\basededatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{042D1727-D60E-3D04-061D-B464ECA63CFC}|Hotel_GestionHabitaciones\\Hotel_GestionHabitaciones.csproj|c:\\users\\danir\\onedrive\\desktop\\proyectohotel_danielr_ivan\\proyectohotel_danielr_ivan_\\hotel_gestionhabitaciones\\hotel_gestionhabitaciones\\hotel_gestionhabitaciones.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{042D1727-D60E-3D04-061D-B464ECA63CFC}|Hotel_GestionHabitaciones\\Hotel_GestionHabitaciones.csproj|solutionrelative:hotel_gestionhabitaciones\\hotel_gestionhabitaciones.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{042D1727-D60E-3D04-061D-B464ECA63CFC}|Hotel_GestionHabitaciones\\Hotel_GestionHabitaciones.csproj|c:\\users\\danir\\onedrive\\desktop\\proyectohotel_danielr_ivan\\proyectohotel_danielr_ivan_\\hotel_gestionhabitaciones\\hotel_gestionhabitaciones\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{042D1727-D60E-3D04-061D-B464ECA63CFC}|Hotel_GestionHabitaciones\\Hotel_GestionHabitaciones.csproj|solutionrelative:hotel_gestionhabitaciones\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,19 +26,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BasedeDatos.cs",
+              "DocumentMoniker": "C:\\Users\\danir\\OneDrive\\Desktop\\ProyectoHotel_DanielR_Ivan\\ProyectoHotel_DanielR_Ivan_\\Hotel_GestionHabitaciones\\Hotel_GestionHabitaciones\\BasedeDatos.cs",
+              "RelativeDocumentMoniker": "Hotel_GestionHabitaciones\\BasedeDatos.cs",
+              "ToolTip": "C:\\Users\\danir\\OneDrive\\Desktop\\ProyectoHotel_DanielR_Ivan\\ProyectoHotel_DanielR_Ivan_\\Hotel_GestionHabitaciones\\Hotel_GestionHabitaciones\\BasedeDatos.cs",
+              "RelativeToolTip": "Hotel_GestionHabitaciones\\BasedeDatos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-13T11:12:16.004Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
+              "Title": "Hotel_GestionHabitaciones.csproj",
+              "DocumentMoniker": "C:\\Users\\danir\\OneDrive\\Desktop\\ProyectoHotel_DanielR_Ivan\\ProyectoHotel_DanielR_Ivan_\\Hotel_GestionHabitaciones\\Hotel_GestionHabitaciones\\Hotel_GestionHabitaciones.csproj",
+              "RelativeDocumentMoniker": "Hotel_GestionHabitaciones\\Hotel_GestionHabitaciones.csproj",
+              "ToolTip": "C:\\Users\\danir\\OneDrive\\Desktop\\ProyectoHotel_DanielR_Ivan\\ProyectoHotel_DanielR_Ivan_\\Hotel_GestionHabitaciones\\Hotel_GestionHabitaciones\\Hotel_GestionHabitaciones.csproj",
+              "RelativeToolTip": "Hotel_GestionHabitaciones\\Hotel_GestionHabitaciones.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-11-13T11:00:54.098Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\losve\\OneDrive\\Escritorio\\ProyectoHotel_DanielR_Ivan_\\Hotel_GestionHabitaciones\\Hotel_GestionHabitaciones\\MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\danir\\OneDrive\\Desktop\\ProyectoHotel_DanielR_Ivan\\ProyectoHotel_DanielR_Ivan_\\Hotel_GestionHabitaciones\\Hotel_GestionHabitaciones\\MainWindow.xaml",
               "RelativeDocumentMoniker": "Hotel_GestionHabitaciones\\MainWindow.xaml",
-              "ToolTip": "C:\\Users\\losve\\OneDrive\\Escritorio\\ProyectoHotel_DanielR_Ivan_\\Hotel_GestionHabitaciones\\Hotel_GestionHabitaciones\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\danir\\OneDrive\\Desktop\\ProyectoHotel_DanielR_Ivan\\ProyectoHotel_DanielR_Ivan_\\Hotel_GestionHabitaciones\\Hotel_GestionHabitaciones\\MainWindow.xaml",
               "RelativeToolTip": "Hotel_GestionHabitaciones\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2026-11-10T07:27:58.287Z",
@@ -38,16 +72,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\losve\\OneDrive\\Escritorio\\ProyectoHotel_DanielR_Ivan_\\Hotel_GestionHabitaciones\\Hotel_GestionHabitaciones\\MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\danir\\OneDrive\\Desktop\\ProyectoHotel_DanielR_Ivan\\ProyectoHotel_DanielR_Ivan_\\Hotel_GestionHabitaciones\\Hotel_GestionHabitaciones\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "Hotel_GestionHabitaciones\\MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\losve\\OneDrive\\Escritorio\\ProyectoHotel_DanielR_Ivan_\\Hotel_GestionHabitaciones\\Hotel_GestionHabitaciones\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\danir\\OneDrive\\Desktop\\ProyectoHotel_DanielR_Ivan\\ProyectoHotel_DanielR_Ivan_\\Hotel_GestionHabitaciones\\Hotel_GestionHabitaciones\\MainWindow.xaml.cs",
               "RelativeToolTip": "Hotel_GestionHabitaciones\\MainWindow.xaml.cs",
-              "ViewState": "AgIAADkAAAAAAAAAAAAYwEcAAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEcAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-10T07:27:54.198Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-10T07:27:54.198Z"
             }
           ]
         }
