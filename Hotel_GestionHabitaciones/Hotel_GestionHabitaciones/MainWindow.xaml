@@ -53,20 +53,9 @@
                             <ComboBoxItem Content="Familiar"/>
                         </ComboBox>
 
-                        <TextBlock Text="Fecha de entrada"/>
-
-                        <DatePicker Name="fechaEntrada"
-                                    Margin="0,5,0,15"/>
-
-                        <TextBlock Text="Fecha de salida"/>
-
-                        <DatePicker Name="fechaSalida"
-                                    Margin="0,5,0,20"/>
-
                         <Button Content="Buscar habitaciones"
                                 Height="35"
                                 Click="Buscar_Click"/>
-
                     </StackPanel>
 
                     <!-- TABLA -->
@@ -120,17 +109,118 @@
             </TabItem>
 
             <!-- RESERVAS -->
-            <TabItem Header="Reservas" Margin="-2,-2,-2,2">
-                <TextBlock Text="Apartado de reservas"
-                           FontSize="22"
-                           Margin="20"/>
+            <TabItem Header="Reservas">
+                <Grid Margin="10">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="260"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <StackPanel Margin="0,0,15,0">
+                        <GroupBox Header="Datos de la reserva">
+                            <StackPanel>
+                                <Label Content="Habitación"/>
+                                <!-- Clave foranea: enseña el numero pero guarda el Id -->
+                                <ComboBox ItemsSource="{Binding Habitaciones}" DisplayMemberPath="Numero" SelectedValuePath="Id"
+                              SelectedValue="{Binding ReservaActual.IdHabitacion, Mode=TwoWay}"/>
+
+                                <Label Content="Fecha de entrada"/>
+                                <DatePicker SelectedDate="{Binding ReservaActual.FechaEntrada, Mode=TwoWay}"/>
+
+                                <Label Content="Fecha de salida"/>
+                                <DatePicker SelectedDate="{Binding ReservaActual.FechaSalida, Mode=TwoWay}"/>
+
+                                <Label Content="Estado"/>
+                                <ComboBox ItemsSource="{Binding EstadosReserva}" SelectedItem="{Binding ReservaActual.Estado, Mode=TwoWay}"/>
+                            </StackPanel>
+                        </GroupBox>
+
+                        <!-- Tabla intermedia Clientes_Reservas -->
+                        <GroupBox Header="Cliente">
+                            <StackPanel>
+                                <ComboBox ItemsSource="{Binding Clientes}" DisplayMemberPath="NombreCompleto" SelectedValuePath="Id"
+                              SelectedValue="{Binding IdClienteReserva, Mode=TwoWay}"/>
+                                <CheckBox Content="Es titular" IsChecked="{Binding EsTitular, Mode=TwoWay}" Margin="0,0,0,8"/>
+                                <Button Content="Añadir cliente a la reserva seleccionada" Command="{Binding AnadirClienteAReservaCommand}"/>
+                            </StackPanel>
+                        </GroupBox>
+
+                        <StackPanel Orientation="Horizontal">
+                            <Button Content="Añadir" Command="{Binding AnadirReservaCommand}"/>
+                            <Button Content="Modificar" Command="{Binding ModificarReservaCommand}"/>
+                            <Button Content="Borrar" Command="{Binding BorrarReservaCommand}"/>
+                            <Button Content="Limpiar" Command="{Binding LimpiarCommand}"/>
+                        </StackPanel>
+
+                        <!-- Envia la reserva seleccionada a la aplicacion 2 -->
+                        <Button Content="Calcular precio (aplicación 2)" Command="{Binding CalcularCommand}"/>
+                    </StackPanel>
+
+                    <DataGrid Grid.Column="1" ItemsSource="{Binding Reservas}"
+                  SelectedItem="{Binding ReservaSeleccionada, Mode=TwoWay}"
+                  AutoGenerateColumns="False" IsReadOnly="True" SelectionMode="Single">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="Habitación" Binding="{Binding NumeroHabitacion}" Width="*"/>
+                            <DataGridTextColumn Header="Tipo" Binding="{Binding TipoHabitacion}" Width="*"/>
+                            <DataGridTextColumn Header="Entrada" Binding="{Binding FechaEntrada, StringFormat=dd/MM/yyyy}" Width="*"/>
+                            <DataGridTextColumn Header="Salida" Binding="{Binding FechaSalida, StringFormat=dd/MM/yyyy}" Width="*"/>
+                            <DataGridTextColumn Header="Clientes" Binding="{Binding Clientes}" Width="2*"/>
+                            <DataGridTextColumn Header="Personas" Binding="{Binding Personas}" Width="*"/>
+                            <DataGridTextColumn Header="Estado" Binding="{Binding Estado}" Width="*"/>
+                            <DataGridTextColumn Header="Precio total" Binding="{Binding PrecioTotal}" Width="*"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </Grid>
             </TabItem>
 
             <!-- CLIENTES -->
             <TabItem Header="Clientes">
-                <TextBlock Text="Apartado de clientes"
-                           FontSize="22"
-                           Margin="20"/>
+                <Grid Margin="10">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="260"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <StackPanel Margin="0,0,15,0">
+                        <GroupBox Header="Datos del cliente">
+                            <StackPanel>
+                                <Label Content="DNI"/>
+                                <TextBox Text="{Binding ClienteActual.Dni, Mode=TwoWay}"/>
+
+                                <Label Content="Nombre"/>
+                                <TextBox Text="{Binding ClienteActual.Nombre, Mode=TwoWay}"/>
+
+                                <Label Content="Apellidos"/>
+                                <TextBox Text="{Binding ClienteActual.Apellidos, Mode=TwoWay}"/>
+
+                                <Label Content="Teléfono"/>
+                                <TextBox Text="{Binding ClienteActual.Telefono, Mode=TwoWay}"/>
+
+                                <Label Content="Email"/>
+                                <TextBox Text="{Binding ClienteActual.Email, Mode=TwoWay}"/>
+                            </StackPanel>
+                        </GroupBox>
+
+                        <StackPanel Orientation="Horizontal">
+                            <Button Content="Añadir" Command="{Binding AnadirClienteCommand}" Width="50"  Margin="5"/>
+                            <Button Content="Modificar" Command="{Binding ModificarClienteCommand}" Width="50"  Margin="5"/>
+                            <Button Content="Borrar" Command="{Binding BorrarClienteCommand}" Width="50"  Margin="5"/>
+                            <Button Content="Limpiar" Command="{Binding LimpiarCommand}" Width="50"  Margin="5"/>
+                        </StackPanel>
+                    </StackPanel>
+
+                    <DataGrid Grid.Column="1" ItemsSource="{Binding Clientes}"
+                  SelectedItem="{Binding ClienteSeleccionado, Mode=TwoWay}"
+                  AutoGenerateColumns="False" IsReadOnly="True" SelectionMode="Single">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="DNI" Binding="{Binding Dni}" Width="100"/>
+                            <DataGridTextColumn Header="Nombre" Binding="{Binding Nombre}" Width="100"/>
+                            <DataGridTextColumn Header="Apellidos" Binding="{Binding Apellidos}" Width="100"/>
+                            <DataGridTextColumn Header="Teléfono" Binding="{Binding Telefono}" Width="100"/>
+                            <DataGridTextColumn Header="Email" Binding="{Binding Email}" Width="2*"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </Grid>
             </TabItem>
 
         </TabControl>

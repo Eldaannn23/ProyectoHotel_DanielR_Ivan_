@@ -18,3 +18,8 @@ C:\Users\losve\OneDrive\Escritorio\2do DAM\Desarrollo de Interfaces\Hotel_Gestio
 C:\Users\losve\OneDrive\Escritorio\2do DAM\Desarrollo de Interfaces\Hotel_GestionHabitaciones\Hotel_GestionHabitaciones\obj\Debug\net9.0-windows\Hotel_GestionHabitaciones.genruntimeconfig.cache
 C:\Users\losve\OneDrive\Escritorio\2do DAM\Desarrollo de Interfaces\Hotel_GestionHabitaciones\Hotel_GestionHabitaciones\obj\Debug\net9.0-windows\ref\Hotel_GestionHabitaciones.dll
 C:\Users\losve\OneDrive\Escritorio\2do DAM\Desarrollo de Interfaces\Hotel_GestionHabitaciones\Hotel_GestionHabitaciones\obj\Debug\net9.0-windows\Hotel_Ge.3FCCA40A.Up2Date
+C:\Users\losve\OneDrive\Escritorio\ProyectoHotel_DanielR_Ivan_\Hotel_GestionHabitaciones\Hotel_GestionHabitaciones\obj\Debug\net9.0-windows\App.g.cs
+C:\Users\losve\OneDrive\Escritorio\ProyectoHotel_DanielR_Ivan_\Hotel_GestionHabitaciones\Hotel_GestionHabitaciones\obj\Debug\net9.0-windows\Hotel_GestionHabitaciones_MarkupCompile.cache
+C:\Users\losve\OneDrive\Escritorio\ProyectoHotel_DanielR_Ivan_\Hotel_GestionHabitaciones\Hotel_GestionHabitaciones\obj\Debug\net9.0-windows\Hotel_GestionHabitaciones.dll
+C:\Users\losve\OneDrive\Escritorio\ProyectoHotel_DanielR_Ivan_\Hotel_GestionHabitaciones\Hotel_GestionHabitaciones\obj\Debug\net9.0-windows\refint\Hotel_GestionHabitaciones.dll
+C:\Users\losve\OneDrive\Escritorio\ProyectoHotel_DanielR_Ivan_\Hotel_GestionHabitaciones\Hotel_GestionHabitaciones\obj\Debug\net9.0-windows\Hotel_GestionHabitaciones.pdb
