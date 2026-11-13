@@ -1,5 +1,5 @@
 
-CREATE DATABASE Hotel;
+CREATE DATABASE IF NOT EXISTS Hotel;
 
 USE Hotel;
 
@@ -149,3 +149,62 @@ SELECT * FROM Reservas;
 SELECT * FROM Clientes_Reservas;
 SELECT * FROM Historial;
 
+
+USE Hotel;
+
+-- Evitar que una reserva aparezca dos veces en el historial
+ALTER TABLE Historial
+ADD UNIQUE KEY uq_historial_reserva (id_reserva);
+
+DELIMITER $$
+
+CREATE EVENT actualizar_historial_diario
+ON SCHEDULE EVERY 1 DAY
+STARTS CURRENT_DATE + INTERVAL 1 DAY
+DO
+BEGIN
+
+    -- 1. Añadir al historial las reservas cuya entrada
+    -- ya ha llegado y que todavía no están registradas
+    INSERT INTO Historial
+    (id_reserva, fecha_entrada, fecha_salida, importe)
+
+    SELECT
+        r.id_reserva,
+        r.fecha_entrada,
+        NULL,
+        r.precio_total
+
+    FROM Reservas r
+
+    WHERE r.fecha_entrada <= CURDATE()
+    AND NOT EXISTS (
+        SELECT 1
+        FROM Historial h
+        WHERE h.id_reserva = r.id_reserva
+    );
+
+
+    -- 2. Actualizar la fecha de salida cuando termine la reserva
+    UPDATE Historial h
+    INNER JOIN Reservas r
+        ON h.id_reserva = r.id_reserva
+
+    SET h.fecha_salida = r.fecha_salida,
+        h.importe = r.precio_total
+
+    WHERE r.fecha_salida <= CURDATE()
+    AND h.fecha_salida IS NULL;
+
+
+    -- 3. Marcar las reservas terminadas
+    UPDATE Reservas
+
+    SET estado = 'Finalizada'
+
+    WHERE fecha_salida <= CURDATE()
+    AND estado <> 'Finalizada';
+
+END$$
+
+DELIMITER ;
